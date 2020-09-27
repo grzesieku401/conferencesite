@@ -1,0 +1,172 @@
+body{
+  font-family: 'Poppins', sans-serif;
+  background: #77797c;
+  font-size: 10px;
+  color: #fff;
+}
+
+.site-header,
+.site-main,
+.site-footer{
+  width: 100%;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active
+{
+  text-decoration: none;
+  color: #fff;
+}
+
+/*----HEADER----*/
+
+.site-header_wrapper{
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.site-header_title,
+.site-header_list-wrapper{
+  width: 50%;
+}
+
+.site-header_title{
+  font-size: 3rem;
+  background: ;
+}
+
+.site-header_list-wrapper{
+  text-align: right;
+}
+
+.site-header_event-info{
+  font-size: 1.3rem;
+  color: #babec3;
+  padding-bottom: 15px;
+}
+.site-header_list-element{
+  display: inline-block;
+  font-weight: bold;
+  font-size: 0.8rem;
+  padding: 2px 10px;
+}
+
+.site-header_info-title{
+  font-size: 2rem;
+  color: #babec3;
+  padding: 105px 0px 15px 0px;
+}
+.site-header_info-desc{
+  font-size: 1.2rem;
+  padding: 20px 70px 40px 70px;
+  line-height: 2rem;
+}
+.site-header_info-wrapper{
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.site-header_info-link{
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+/*----MAIN----*/
+
+.site-main{
+  background: #fff;
+  color: #000;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 280px));
+  justify-content: center;
+  grid-column-gap: 30px;
+}
+
+.site-main_section{
+  padding-bottom: 40px;
+}
+
+.site-main_section-img{
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.site-main_section-short{
+  display: inline-block;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.site-main_section-title{
+  font-size: 1.2rem;
+  padding: 20px 0;
+}
+.site-main_section-desc{
+  font-size: 1rem;
+  text-align: justify;
+  line-height: 1.4rem;
+}
+
+
+/*----FOOTER----*/
+
+.site-footer{
+  height: 100%;
+}
+
+.site-footer_list-element{
+  display: inline-block;
+  font-size: 0.8rem;
+  padding: 2px 10px;
+}
+.site-footer_list{
+  display: inline-block;
+
+}
+.site-footer_copy{
+  display: inline-block;
+}
+
+.site-footer{
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-footer_copy{
+  font-size: 0.7rem;
+  color: #babec3;
+}
+
+/*----MEDIA----*/
+
+@media all and (max-width: 900px) {
+  .site-header_wrapper,
+  .site-header_title,
+  .site-header_list-wrapper,
+  .site-footer{
+    width: 100%;
+    text-align: center;
+  }
+  .site-footer_list{
+    display: none;
+  }
+  .site-footer_copy{
+    padding-left: 15px;
+  }
+}
